@@ -750,3 +750,4 @@ window.BLOG_POSTS = [
     canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=how-interior-designers-and-contractors-win-high-ticket-clients-with-portfolio-websites"
   }
 ];
+<script src="../data/posts.js?v=2"></script>
