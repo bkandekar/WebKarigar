@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Portfolio & Sample Demos | Webkar Studio</title>
+  <meta name="description" content="Explore sample websites designed for Maharashtra local businesses: pest control, bridal makeup, coaching classes, gyms, clinics, and interior designers.">
+  <link rel="canonical" href="https://webkarstudio.in/portfolio.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webkarstudio.in/portfolio.html">
+  <meta property="og:title" content="Local Business Website Portfolio | Webkar Studio">
+  <meta property="og:description" content="Browse sample high-speed mobile websites crafted for Maharashtra service businesses and retailers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">W</div>
+        <div class="logo-text">Webkar<span>Studio</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services & Pricing</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20to%20see%20portfolio%20demos" class="btn btn-whatsapp btn-sm" data-whatsapp-btn>
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services & Pricing</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link active">Portfolio</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="blog/index.html" class="mobile-nav-link">Blog & SEO Guides</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="contact.html" class="btn btn-primary">Get a Free Demo</a>
+      <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn btn-whatsapp" data-whatsapp-btn>💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section-sm" style="background: linear-gradient(180deg, var(--color-white) 0%, var(--color-gray-50) 100%); border-bottom: 1px solid var(--color-gray-200);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <div class="breadcrumbs" style="justify-content: center;">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Portfolio & Demos</span>
+      </div>
+      <div class="glow-badge" style="margin-bottom: 1rem;">
+        <span class="pulse-dot"></span> 12+ Production-Ready Design Blueprints
+      </div>
+      <h1 style="margin-bottom: 1rem;">High-Converting Websites Crafted For Maharashtra Businesses</h1>
+      <p style="font-size: 1.15rem; color: var(--color-gray-600);">
+        Browse live concept demos engineered for local lead generation. Every design includes lightning 0.4s load speed, custom color aesthetics, Google Maps sync, and direct 1-click WhatsApp lead routing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section with Category Filters & Search -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Interactive Filter & Search Bar -->
+      <div style="background: var(--color-white); padding: 1.5rem 2rem; border-radius: var(--radius-xl); border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-sm); margin-bottom: 3rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+          <div style="font-weight: 700; color: var(--color-gray-900); display: flex; align-items: center; gap: 0.5rem;">
+            <span>🎨</span> Explore By Business Niche:
+          </div>
+          <div style="position: relative; min-width: 260px; flex-grow: 1; max-width: 380px;">
+            <input type="text" id="portfolioSearchInput" placeholder="🔍 Search e.g. gym, dental, cafe, salon..." style="width: 100%; padding: 0.65rem 1rem; border-radius: var(--radius-md); border: 1.5px solid var(--color-gray-200); font-size: 0.9rem; font-family: var(--font-body); outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--color-primary)'" onblur="this.style.borderColor='var(--color-gray-200)'">
+          </div>
+        </div>
+
+        <div class="portfolio-filters" style="margin-bottom: 0;">
+          <button class="filter-btn active" data-filter="all">All Industries (12)</button>
+          <button class="filter-btn" data-filter="services">Services & Trades</button>
+          <button class="filter-btn" data-filter="wellness">Health & Beauty</button>
+          <button class="filter-btn" data-filter="education">Education & Finance</button>
+          <button class="filter-btn" data-filter="home">Home & Real Estate</button>
+          <button class="filter-btn" data-filter="food-events">Food & Hospitality</button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid with 12 Unique Designs -->
+      <div class="portfolio-grid" id="portfolioProjectsGrid">
+        
+        <!-- Design 1: Pest Control -->
+        <div class="portfolio-card" data-category="services" data-keywords="pest control termite cockroach sanitization fumigation">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=800&q=80" alt="Pest Control Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Emergency Service</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #dc2626; text-transform: uppercase; margin-bottom: 0.25rem;">High Urgency & Trust</div>
+            <h3 class="portfolio-title">Apex Pest Management & Termite Care</h3>
+            <p class="portfolio-desc">High-urgency emergency layout featuring 1-hour response badges, organic chemical safety certifications, and instant WhatsApp booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Emergency Dial</span>
+              <span class="tag-badge">Area Coverage Map</span>
+              <span class="tag-badge">Rate Calculator</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="pest-control" data-demo-title="Apex Pest Management" data-demo-badge="Emergency Pest Control" data-demo-img="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=800&q=80" data-demo-desc="Engineered specifically for local emergency trade searches. Features prominent WhatsApp floating buttons, locality pricing tables, and government license proof.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Pest%20Control%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 2: Bridal Makeup & Beauty Parlour -->
+        <div class="portfolio-card" data-category="wellness" data-keywords="beauty parlour bridal makeup salon spa hairstyle mehendi">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Beauty Parlour Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Luxury Beauty</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #db2777; text-transform: uppercase; margin-bottom: 0.25rem;">Rose Gold / Glamour</div>
+            <h3 class="portfolio-title">Aura Bridal Makeup & Unisex Salon</h3>
+            <p class="portfolio-desc">High-aesthetic bridal transformation portfolio with before/after gallery, pre-bridal packages, and wedding date availability checker.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">HD Photo Gallery</span>
+              <span class="tag-badge">Bridal Packages</span>
+              <span class="tag-badge">Instagram Sync</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="beauty-parlour" data-demo-title="Aura Bridal Makeup & Salon" data-demo-badge="Bridal & Beauty" data-demo-img="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" data-demo-desc="Luxury editorial aesthetic showcasing bride transformations, makeup tiers (HD, Airbrush), client reviews, and direct WhatsApp consultations.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Beauty%20Salon%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 3: Science & JEE Coaching Classes -->
+        <div class="portfolio-card" data-category="education" data-keywords="coaching tuition classes science jee neet cet 10th 12th commerce">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Tuition Center Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Academic Excellence</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #2563eb; text-transform: uppercase; margin-bottom: 0.25rem;">Academic Authority</div>
+            <h3 class="portfolio-title">Pratibha Science & JEE Academy</h3>
+            <p class="portfolio-desc">Result-oriented admission portal with past board toppers showcase, faculty credentials, downloadable syllabus PDFs, and demo seat booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Topper Wall</span>
+              <span class="tag-badge">Batch Timetable</span>
+              <span class="tag-badge">Free Demo Class</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="coaching" data-demo-title="Pratibha Science & JEE Academy" data-demo-badge="Coaching & Tuition" data-demo-img="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" data-demo-desc="Built to drive student admissions and parent trust. Highlighting rank holders, faculty experience, video testimonials, and direct WhatsApp enquiry.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Coaching%20Academy%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 4: Multi-Speciality Dental & Polyclinic -->
+        <div class="portfolio-card" data-category="wellness" data-keywords="dental clinic doctor hospital polyclinic root canal aligners">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Clinic Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Healthcare Clean</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #0d9488; text-transform: uppercase; margin-bottom: 0.25rem;">Medical Trust & Slate Teal</div>
+            <h3 class="portfolio-title">Dr. Deshmukh Dental & Polyclinic</h3>
+            <p class="portfolio-desc">Sterile, professional medical design featuring Doctor MBBS/MDS certifications, treatment overviews, OPD schedule, and 1-click consultation booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">OPD Timetable</span>
+              <span class="tag-badge">Doctor Bio</span>
+              <span class="tag-badge">Google 5★ Reviews</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="clinic" data-demo-title="Dr. Deshmukh Dental & Polyclinic" data-demo-badge="Healthcare & Dental" data-demo-img="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" data-demo-desc="Built to inspire patient calm and trust. Clean typography, sterilized facility photos, transparent consultation fee ranges, and direct WhatsApp appointment requests.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Dental%20Clinic%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 5: 24/7 CrossFit & Fitness Arena -->
+        <div class="portfolio-card" data-category="wellness" data-keywords="gym fitness crossfit personal trainer bodybuilding workout weightloss">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Gym Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Dark Neon Athletic</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #10b981; text-transform: uppercase; margin-bottom: 0.25rem;">High Energy & Neon Lime</div>
+            <h3 class="portfolio-title">IronCore Strength & CrossFit Gym</h3>
+            <p class="portfolio-desc">High-octane dark theme gym website showcasing imported equipment, certified trainer profiles, transformation stories, and free 1-day pass form.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Free 1-Day Pass</span>
+              <span class="tag-badge">Tiered Pricing</span>
+              <span class="tag-badge">Trainer Roster</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="gym" data-demo-title="IronCore Strength Gym" data-demo-badge="Fitness & Gym" data-demo-img="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" data-demo-desc="Energetic dark-mode layout highlighting imported equipment, HIIT & Yoga schedules, client fat-loss transformations, and WhatsApp trial passes.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Gym%20Fitness%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 6: Luxury Interior Architecture & Decor -->
+        <div class="portfolio-card" data-category="home" data-keywords="interior design modular kitchen architect 3d renovation living room home decor">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Interior Designer Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Architectural Luxe</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #b45309; text-transform: uppercase; margin-bottom: 0.25rem;">Warm Charcoal & Gold</div>
+            <h3 class="portfolio-title">Vistara Modular Kitchen & Living Interiors</h3>
+            <p class="portfolio-desc">Sophisticated architectural portfolio with interactive 3D render walkthroughs, 45-day turnkey handover guarantee, and budget estimator.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">3D Walkthroughs</span>
+              <span class="tag-badge">Turnkey Packages</span>
+              <span class="tag-badge">Floor Plan Enquiry</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="interior" data-demo-title="Vistara Living Interiors" data-demo-badge="Interior Architecture" data-demo-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" data-demo-desc="Designed for high-ticket home transformations. Clean grids, material finishes showcase, 45-day handover warranty, and WhatsApp consultation booking.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Interior%20Designer%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 7: Authentic Cloud Kitchen & Family Restaurant -->
+        <div class="portfolio-card" data-category="food-events" data-keywords="restaurant cafe cloud kitchen food delivery thali misal biryani menu">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Hospitality & Food</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #ea580c; text-transform: uppercase; margin-bottom: 0.25rem;">Warm Saffron & Earthy</div>
+            <h3 class="portfolio-title">Katakirr Misal & Traditional Maharashtrian Cafe</h3>
+            <p class="portfolio-desc">Appetizing food menu layout, interactive Google Maps driving route button, food photography slider, and WhatsApp party order booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Digital QR Menu</span>
+              <span class="tag-badge">Table Reservation</span>
+              <span class="tag-badge">Catering Enquiries</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="restaurant" data-demo-title="Katakirr Traditional Cafe" data-demo-badge="Restaurant & Cafe" data-demo-img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" data-demo-desc="Mouth-watering photography, live chef specials, Google Maps navigation embed, hygiene certificates, and direct party/bulk order WhatsApp booking.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Restaurant%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 8: Real Estate & Plot Consultants -->
+        <div class="portfolio-card" data-category="home" data-keywords="real estate plots flats villa land broker developer builder">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Real Estate Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Property & Plots</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #1e3a8a; text-transform: uppercase; margin-bottom: 0.25rem;">Corporate Navy & Gold</div>
+            <h3 class="portfolio-title">MahaVastu Properties & Plot Consultants</h3>
+            <p class="portfolio-desc">High-trust property portal showcasing verified NA plot layouts, residential flat configurations, 7/12 extract guidance, and free site visit cab booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Property Filter</span>
+              <span class="tag-badge">Free Site Visit</span>
+              <span class="tag-badge">Download Brochure</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="real-estate" data-demo-title="MahaVastu Properties" data-demo-badge="Real Estate & Plots" data-demo-img="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" data-demo-desc="Built to capture high-value property buyer inquiries. Verified clear title badges, floor plan layouts, video walkthroughs, and instant WhatsApp brochures.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Real%20Estate%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 9: Ceramic Coating & Auto Detailing Studio -->
+        <div class="portfolio-card" data-category="services" data-keywords="car wash detailing ceramic coating paint protection ppf auto garage mechanics">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" alt="Car Detailing Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Auto Detailing</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #0284c7; text-transform: uppercase; margin-bottom: 0.25rem;">Carbon Gray & Electric Cyan</div>
+            <h3 class="portfolio-title">HyperShine Ceramic & PPF Detailing Studio</h3>
+            <p class="portfolio-desc">Sleek, high-gloss automotive website highlighting 9H ceramic coating warranty tiers, paint correction videos, and express pickup/drop booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Warranty Badges</span>
+              <span class="tag-badge">PPF Packages</span>
+              <span class="tag-badge">Slot Reservation</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="auto-detailing" data-demo-title="HyperShine Auto Studio" data-demo-badge="Auto & Detailing" data-demo-img="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" data-demo-desc="Sleek carbon dark aesthetics showcasing before/after gloss finishes, multi-year warranty packages, and rapid WhatsApp slot bookings.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Auto%20Detailing%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 10: Chartered Accountant & Tax Advisory -->
+        <div class="portfolio-card" data-category="education" data-keywords="chartered accountant ca gst return itr filing tax audit company registration">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Chartered Accountant Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Finance & Tax</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #047857; text-transform: uppercase; margin-bottom: 0.25rem;">Corporate Slate & Emerald</div>
+            <h3 class="portfolio-title">SmartTax & Advisory Services</h3>
+            <p class="portfolio-desc">Clean corporate consultancy portal for GST filing, private limited registration, trademark filing, and tax advisory with online document upload checklist.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">GST / ITR Checklist</span>
+              <span class="tag-badge">Fee Schedule</span>
+              <span class="tag-badge">Confidential WhatsApp</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="ca-firm" data-demo-title="SmartTax CA Advisory" data-demo-badge="Finance & Advisory" data-demo-img="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" data-demo-desc="Professional, confidence-inspiring layout for CAs, tax advocates, and financial planners with clear service packages and instant inquiry forms.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20CA%20Tax%20Advisory%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 11: Rooftop Solar & Green Energy EPC -->
+        <div class="portfolio-card" data-category="services" data-keywords="solar rooftop energy subsidy mahadiscom epc panels net metering">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar Energy Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Solar & Green Energy</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #d97706; text-transform: uppercase; margin-bottom: 0.25rem;">Clean Sun Gold & Azure</div>
+            <h3 class="portfolio-title">SuryaShakti Solar EPC Solutions</h3>
+            <p class="portfolio-desc">High-converting clean energy site highlighting PM Surya Ghar Muft Bijli Yojana subsidies, electricity bill savings calculator, and site survey booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Subsidy Guide</span>
+              <span class="tag-badge">Savings Calculator</span>
+              <span class="tag-badge">MahaDiscom Approval</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="solar" data-demo-title="SuryaShakti Solar EPC" data-demo-badge="Solar & Green Tech" data-demo-img="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" data-demo-desc="Engineered for rooftop solar installers with built-in subsidy breakdowns, tier-1 panel warranty badges, and instant WhatsApp site survey requests.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Solar%20EPC%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 12: Royal Wedding & Event Management -->
+        <div class="portfolio-card" data-category="food-events" data-keywords="wedding event management mandap decoration catering birthday sangeet photography">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding Event Planner Website Demo" class="portfolio-img" loading="lazy">
+            <span class="portfolio-badge">Royal Events</span>
+          </div>
+          <div class="portfolio-content">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #be123c; text-transform: uppercase; margin-bottom: 0.25rem;">Festive Ruby & Champagne</div>
+            <h3 class="portfolio-title">Utsav Royal Weddings & Event Planners</h3>
+            <p class="portfolio-desc">Vibrant celebration portfolio featuring destination wedding decor galleries, catering menus, sound & light setups, and muhurat date booking.</p>
+            <div class="portfolio-tags">
+              <span class="tag-badge">Mandap Gallery</span>
+              <span class="tag-badge">Budget Packages</span>
+              <span class="tag-badge">WhatsApp Consultation</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-primary btn-sm preview-demo-btn" style="flex: 1;" data-demo-id="weddings" data-demo-title="Utsav Royal Weddings" data-demo-badge="Wedding & Events" data-demo-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" data-demo-desc="Rich festive aesthetic showcasing royal mandap setups, catering menus, client video reviews, and quick WhatsApp date availability checks.">⚡ Live Preview</button>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hi%20Webkar%20Studio%2C%20I%20want%20the%20Wedding%20Event%20Demo%20Design" class="btn btn-outline btn-sm" style="flex: 1;" data-whatsapp-btn>Order This Design</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Design Aesthetic Style Explorer -->
+  <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-gray-200);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Visual Identity & Craft</div>
+        <h2 class="section-title">6 Distinct Design Archetypes Tailored To Your Brand</h2>
+        <p class="section-subtitle">We don't use generic cookie-cutter templates. Every website is custom-styled to match the exact psychology of your target customers.</p>
+      </div>
+
+      <div class="design-styles-grid">
+        <!-- Archetype 1 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Architectural Minimalist Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #0f172a;"></div>
+              <div class="palette-circle" style="background: #d97706;"></div>
+              <div class="palette-circle" style="background: #f8fafc;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">Minimalist &amp; Luxe</span>
+            <h3 class="design-card-title">Architectural Elegance</h3>
+            <p class="design-card-desc">High-contrast, generous negative space, refined serif headings, and large imagery. Best for Interior Designers, Architects, and Luxury Salons.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: High-Ticket</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Architectural%20Elegance%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archetype 2 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80" alt="High Urgency Service Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #dc2626;"></div>
+              <div class="palette-circle" style="background: #2563eb;"></div>
+              <div class="palette-circle" style="background: #ffffff;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">High Urgency &amp; Action</span>
+            <h3 class="design-card-title">Emergency Trade Pro</h3>
+            <p class="design-card-desc">Sticky call-to-action buttons, verified safety certifications, emergency badges, and instant map routing. Ideal for Pest Control, Plumbers, Electricians, and Towing.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: Fast Direct Calls</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Emergency%20Trade%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archetype 3 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Medical Clean Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #0d9488;"></div>
+              <div class="palette-circle" style="background: #0284c7;"></div>
+              <div class="palette-circle" style="background: #f0fdfa;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">Sterile &amp; Trustworthy</span>
+            <h3 class="design-card-title">Medical &amp; Clinic Pure</h3>
+            <p class="design-card-desc">Calming oceanic teals, clean sans-serif typography, structured doctor bios, OPD timetable slots, and patient testimonials. Perfect for Dentists, Clinics, and Labs.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: Healthcare</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Medical%20Pure%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archetype 4 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Athletic Dark Neon Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #0f172a;"></div>
+              <div class="palette-circle" style="background: #10b981;"></div>
+              <div class="palette-circle" style="background: #38bdf8;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">High Energy &amp; Bold</span>
+            <h3 class="design-card-title">Dark Neon Dynamic</h3>
+            <p class="design-card-desc">Deep charcoal slate canvas paired with electric neon lime & cyan highlights. Best for Gyms, CrossFit, Dance Academies, and Detailing Studios.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: Youth & Fitness</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Dark%20Neon%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archetype 5 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Warm Food & Hospitality Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #ea580c;"></div>
+              <div class="palette-circle" style="background: #f59e0b;"></div>
+              <div class="palette-circle" style="background: #fffbeb;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">Warm &amp; Appetizing</span>
+            <h3 class="design-card-title">Hospitality &amp; Flavors</h3>
+            <p class="design-card-desc">Warm saffron, terracotta, and toasted tones that trigger appetite. Featuring digital QR menus, chef stories, and catering order CTAs. For Restaurants, Cafes, and Bakers.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: Food & Dining</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Hospitality%20Flavors%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archetype 6 -->
+        <div class="design-style-card">
+          <div class="design-preview-header">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Academic Corporate Authority Style">
+            <div class="design-palette-pills">
+              <div class="palette-circle" style="background: #1e3a8a;"></div>
+              <div class="palette-circle" style="background: #0ea5e9;"></div>
+              <div class="palette-circle" style="background: #f8fafc;"></div>
+            </div>
+          </div>
+          <div class="design-card-body">
+            <span class="design-vibe-tag">Authority &amp; Results</span>
+            <h3 class="design-card-title">Corporate Academic Pro</h3>
+            <p class="design-card-desc">Classic navy & slate corporate styling highlighting achievements, certifications, faculty credentials, and structured download modules. For Coaching Classes, CAs, and Real Estate.</p>
+            <div class="design-card-footer">
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-gray-600);">Suited For: Education & Finance</span>
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=I%20like%20the%20Corporate%20Academic%20design%20style" class="btn btn-outline btn-sm" data-whatsapp-btn>Choose Style</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Demo Modal Container -->
+  <div class="demo-modal-backdrop" id="demoModalBackdrop">
+    <div class="demo-modal-box">
+      <div class="demo-modal-topbar">
+        <div class="demo-modal-title">
+          <span>✨</span> <span id="modalDemoTitle">Apex Pest Management Demo</span>
+        </div>
+        <div class="demo-device-switcher">
+          <button class="device-btn active" data-device="desktop">🖥️ Desktop</button>
+          <button class="device-btn" data-device="tablet">📱 Tablet</button>
+          <button class="device-btn" data-device="mobile">📲 Mobile</button>
+        </div>
+        <button class="demo-modal-close" id="closeDemoModalBtn">&times;</button>
+      </div>
+
+      <div class="demo-modal-body">
+        <div class="demo-frame-container device-desktop" id="demoFrameContainer">
+          <!-- Mockup browser bar -->
+          <div style="background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #64748b;">
+            <div style="display: flex; gap: 4px;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444; display: inline-block;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; display: inline-block;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
+            </div>
+            <div style="background: white; border-radius: 4px; padding: 2px 10px; flex-grow: 1; border: 1px solid #cbd5e1; font-family: monospace; font-size: 0.75rem;" id="modalBrowserUrl">https://demo.webkarstudio.in/preview</div>
+          </div>
+
+          <!-- Mockup inner page view -->
+          <div style="padding: 1.5rem; background: white; max-height: 480px; overflow-y: auto;" id="modalDemoContentArea">
+            <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 1rem; margin-bottom: 1rem;">
+              <div style="font-weight: 800; font-size: 1.15rem; color: #0f172a;" id="modalClientBrandName">Apex Pest Management</div>
+              <div style="display: flex; gap: 0.5rem;">
+                <span class="badge" style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.5rem; border-radius: 4px;">Verified GMB Sync</span>
+              </div>
+            </div>
+
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; max-height: 240px;">
+              <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1000&q=80" alt="Demo preview" id="modalDemoImg" style="width: 100%; height: 240px; object-fit: cover;">
+              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(15,23,42,0.8) 100%); display: flex; align-items: flex-end; padding: 1rem; color: white;">
+                <div>
+                  <div style="font-size: 0.8rem; font-weight: 700; color: #60a5fa;" id="modalDemoSubtitle">Emergency Service • Pune & PCMC</div>
+                  <h2 style="font-size: 1.3rem; color: white; margin: 0;" id="modalDemoHeroHeading">100% Guaranteed Termite & Pest Elimination</h2>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: #475569; line-height: 1.6;" id="modalDemoDescription">
+              Engineered specifically for local emergency trade searches. Features prominent WhatsApp floating buttons, locality pricing tables, and government license proof.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
+              <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <div style="font-size: 1.25rem;">⚡</div>
+                <div style="font-weight: 700; font-size: 0.85rem; margin-top: 4px;">0.4s Speed</div>
+                <div style="font-size: 0.75rem; color: #64748b;">Instant mobile load</div>
+              </div>
+              <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <div style="font-size: 1.25rem;">📍</div>
+                <div style="font-weight: 700; font-size: 0.85rem; margin-top: 4px;">Google Maps</div>
+                <div style="font-size: 0.75rem; color: #64748b;">Top 3-pack schema</div>
+              </div>
+              <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <div style="font-size: 1.25rem;">💬</div>
+                <div style="font-weight: 700; font-size: 0.85rem; margin-top: 4px;">WhatsApp Form</div>
+                <div style="font-size: 0.75rem; color: #64748b;">Direct lead funnel</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-modal-bottom-bar">
+        <div>
+          <div style="font-weight: 700; color: var(--color-gray-900);">Want this customized for your business name &amp; photos?</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-500);">Delivered fully functional in 3 to 5 days. Starting at ₹8,000.</div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="https://wa.me/{{WHATSAPP_NUMBER}}" id="modalOrderWhatsAppBtn" class="btn btn-whatsapp btn-sm" data-whatsapp-btn>
+            <span>💬</span> Get This Design on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Demo CTA -->
+  <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-gray-200);">
+    <div class="container" style="text-align: center; max-width: 700px;">
+      <div class="section-badge">Customized For You</div>
+      <h2 style="margin-bottom: 1rem;">Don't See Your Exact Business Niche?</h2>
+      <p style="color: var(--color-gray-600); margin-bottom: 2rem; font-size: 1.1rem;">
+        We design custom websites for all types of businesses — solar contractors, catering services, transport operators, event planners, and local retail stores. Let us create a custom concept for your shop for free.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Request a Free Custom Demo</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: var(--color-white);">
+            <div class="logo-icon">W</div>
+            <div class="logo-text" style="color: var(--color-white);">Webkar<span style="color: var(--color-accent);">Studio</span></div>
+          </a>
+          <p>Helping local businesses across Maharashtra build credibility, rank on Google Maps, and capture daily WhatsApp leads with affordable static websites.</p>
+          <div style="margin-top: 1rem;">
+            <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn btn-whatsapp btn-sm" data-whatsapp-btn>
+              <span>💬</span> WhatsApp: +91 {{WHATSAPP_NUMBER}}
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="portfolio.html">Portfolio Demos</a></li>
+            <li><a href="about.html">About Webkar Studio</a></li>
+            <li><a href="blog/index.html">Blog & Local SEO</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Sample Demos</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Pest Control Demo</a></li>
+            <li><a href="portfolio.html">Beauty Parlour Demo</a></li>
+            <li><a href="portfolio.html">Coaching Classes Demo</a></li>
+            <li><a href="portfolio.html">Gym & Fitness Demo</a></li>
+            <li><a href="portfolio.html">Interior Design Demo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Studio Location & Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--color-gray-300);">
+            📍 Serving Pune, Mumbai, Nashik, Kolhapur, Nagpur, and all districts across Maharashtra.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--color-gray-400);">
+            🕒 Mon – Sat: 9:00 AM – 8:00 PM IST<br>
+            ✉️ contact@webkarstudio.in
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Webkar Studio. All rights reserved.
+        </div>
+        <div class="footer-credit">
+          Website by <strong>ebookcharm Web Services</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="whatsapp-float" data-whatsapp-btn aria-label="Chat with Webkar Studio on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+    <div class="whatsapp-badge-pill">1</div>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
