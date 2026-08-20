@@ -81,7 +81,6 @@ window.BLOG_CATEGORIES = {
 
 window.BLOG_POSTS = [
   {
-    {
   id: 1,
   title: "How Pest Control Businesses in Maharashtra Get Regular Leads With a Single-Page Website",
   slug: "how-pest-control-businesses-in-maharashtra-get-leads-with-a-website",
