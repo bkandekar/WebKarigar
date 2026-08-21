@@ -6,12 +6,8 @@
 (function () {
   'use strict';
 
-  // ==========================================
-  // GLOBAL CONFIGURATION & PLACEHOLDERS
-  // ==========================================
-  // Replace {{WHATSAPP_NUMBER}} with your real 10-12 digit WhatsApp number (e.g., '919876543210')
   const CONFIG = {
-    whatsappNumber: '{{WHATSAPP_NUMBER}}', // <--- REPLACE THIS PLACEHOLDER WITH YOUR WHATSAPP NUMBER
+    whatsappNumber: '{{WHATSAPP_NUMBER}}',
     fallbackWhatsAppNumber: '919876543210',
     defaultEnquiryMessage: 'Hello Webkar Studio, I am interested in getting a website for my business.',
     siteUrl: 'https://webkarstudio.in',
@@ -19,10 +15,8 @@
     parentBrand: 'ebookcharm Web Services'
   };
 
-  // Expose config globally
   window.WEBAKR_CONFIG = CONFIG;
 
-  // Helper to get active WhatsApp link
   function getWhatsAppUrl(customText) {
     const rawNumber = (CONFIG.whatsappNumber && CONFIG.whatsappNumber !== '{{WHATSAPP_NUMBER}}')
       ? CONFIG.whatsappNumber
@@ -33,7 +27,6 @@
   }
   window.getWhatsAppUrl = getWhatsAppUrl;
 
-  // Initialize on DOM Ready
   document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initWhatsAppLinks();
@@ -47,9 +40,6 @@
     initLiveActivityToasts();
   });
 
-  // ==========================================
-  // 1. MOBILE NAVIGATION & ACTIVE LINK
-  // ==========================================
   function initNavigation() {
     const menuToggle = document.getElementById('menuToggle');
     const mobileNav = document.getElementById('mobileNav');
@@ -69,7 +59,6 @@
       });
     }
 
-    // Highlight current page in nav
     const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     navLinks.forEach(link => {
@@ -85,9 +74,6 @@
     });
   }
 
-  // ==========================================
-  // 2. WHATSAPP LINK BINDING
-  // ==========================================
   function initWhatsAppLinks() {
     const waButtons = document.querySelectorAll('[data-whatsapp-btn], a[href*="{{WHATSAPP_NUMBER}}"], .whatsapp-float');
     waButtons.forEach(btn => {
@@ -98,9 +84,6 @@
     });
   }
 
-  // ==========================================
-  // 3. PORTFOLIO FILTERING & SEARCH
-  // ==========================================
   function initPortfolioFilters() {
     const filterBtns = document.querySelectorAll('.portfolio-filters .filter-btn');
     const portfolioCards = document.querySelectorAll('.portfolio-grid .portfolio-card');
@@ -112,20 +95,12 @@
     let currentSearch = '';
 
     function filterCards() {
-      let visibleCount = 0;
       portfolioCards.forEach(card => {
         const cardCat = card.getAttribute('data-category') || '';
         const cardKeywords = (card.getAttribute('data-keywords') || '') + ' ' + (card.innerText || '');
-        
         const matchesCategory = (currentCategory === 'all' || cardCat === currentCategory);
         const matchesSearch = !currentSearch || cardKeywords.toLowerCase().includes(currentSearch.toLowerCase());
-
-        if (matchesCategory && matchesSearch) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
+        card.style.display = (matchesCategory && matchesSearch) ? 'flex' : 'none';
       });
     }
 
@@ -148,9 +123,6 @@
     }
   }
 
-  // ==========================================
-  // 4. CONTACT FORM HANDLER
-  // ==========================================
   function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     if (!contactForm) return;
@@ -178,9 +150,6 @@
     });
   }
 
-  // ==========================================
-  // 5. TOAST & SOCIAL SHARING
-  // ==========================================
   function showToast(message) {
     let toast = document.getElementById('siteToast');
     if (!toast) {
@@ -217,23 +186,19 @@
   function initDynamicBlogRenderer() {
     if (typeof window.BLOG_POSTS === 'undefined') return;
 
-    // Check if on Single Post Page
     const postContainer = document.getElementById('singlePostContainer');
     if (postContainer) {
       renderSinglePost();
       return;
     }
 
-    // Check if on Category / Subcategory Page
     const categoryPageContainer = document.getElementById('categoryPostsGrid');
     if (categoryPageContainer) {
       const targetCategory = categoryPageContainer.getAttribute('data-category');
-      const targetSubcategory = categoryPageContainer.getAttribute('data-subcategory');
-      renderCategoryPostGrid(targetCategory, targetSubcategory);
+      renderCategoryPostGrid(targetCategory);
       return;
     }
 
-    // Check if on Blog Listing Page
     const blogListingGrid = document.getElementById('blogPostsGrid');
     if (blogListingGrid) {
       renderBlogListing();
@@ -245,8 +210,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const slug = urlParams.get('slug');
     const posts = window.BLOG_POSTS || [];
-    
-    // Find post by slug or default to first post
+
     let post = posts.find(p => p.slug === slug);
     if (!post && posts.length > 0) {
       post = posts[0];
@@ -258,23 +222,20 @@
       return;
     }
 
-    // Update document title & metadata
     document.title = `${post.title} | Webkar Studio Blog`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', post.excerpt);
 
-    // Render breadcrumbs
     const breadcrumbCategory = document.getElementById('breadcrumbCategory');
     if (breadcrumbCategory) {
       const catObj = window.BLOG_CATEGORIES?.[post.category];
       breadcrumbCategory.textContent = catObj ? catObj.name : post.category;
-      breadcrumbCategory.href = `../blog/${post.category}/index.html`;
+      breadcrumbCategory.href = `${post.category}/index.html`;
     }
 
     const breadcrumbTitle = document.getElementById('breadcrumbTitle');
     if (breadcrumbTitle) breadcrumbTitle.textContent = post.title;
 
-    // Render Post Header Details
     const postTitle = document.getElementById('postTitle');
     if (postTitle) postTitle.textContent = post.title;
 
@@ -293,12 +254,10 @@
       postImage.alt = post.title;
     }
 
-    // Render Content & Auto-generate Table of Contents
     const contentEl = document.getElementById('postMainContent');
     if (contentEl) {
       contentEl.innerHTML = post.content;
 
-      // Extract H2 headings for TOC
       const headings = contentEl.querySelectorAll('h2');
       const tocList = document.getElementById('tocList');
       if (tocList && headings.length > 0) {
@@ -319,16 +278,14 @@
       }
     }
 
-    // Render Tags
     const tagsContainer = document.getElementById('postTags');
     if (tagsContainer && post.tags) {
       tagsContainer.innerHTML = post.tags.map(t => `<span class="tag-badge">#${t}</span>`).join(' ');
     }
 
-    // Setup Share URLs
     const currentUrl = encodeURIComponent(window.location.href);
     const postTitleEnc = encodeURIComponent(post.title);
-    
+
     const waShare = document.getElementById('shareWhatsApp');
     if (waShare) waShare.href = `https://api.whatsapp.com/send?text=${postTitleEnc}%20${currentUrl}`;
 
@@ -341,14 +298,12 @@
     const xShare = document.getElementById('shareTwitter');
     if (xShare) xShare.href = `https://twitter.com/intent/tweet?text=${postTitleEnc}&url=${currentUrl}`;
 
-    // Render Related Posts (avoiding current post)
     const relatedGrid = document.getElementById('relatedPostsGrid');
     if (relatedGrid) {
       const otherPosts = posts.filter(p => p.id !== post.id && (p.category === post.category || p.featured)).slice(0, 3);
-      relatedGrid.innerHTML = otherPosts.map(p => createBlogCardHtml(p, false)).join('');
+      relatedGrid.innerHTML = otherPosts.map(p => createBlogCardHtml(p, '')).join('');
     }
 
-    // Update JSON-LD Article Schema
     const schemaScript = document.getElementById('articleSchema');
     if (schemaScript) {
       const schemaData = {
@@ -357,66 +312,80 @@
         "headline": post.title,
         "description": post.excerpt,
         "image": post.featuredImage,
-        "author": {
-          "@type": "Organization",
-          "name": "Webkar Studio"
-        },
+        "author": { "@type": "Organization", "name": "Webkar Studio" },
         "publisher": {
           "@type": "Organization",
           "name": "Webkar Studio (ebookcharm Web Services)",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://webkarstudio.in/images/logo.png"
-          }
+          "logo": { "@type": "ImageObject", "url": "https://webkarstudio.in/images/logo.png" }
         },
         "datePublished": post.date,
         "dateModified": post.modifiedDate || post.date,
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": post.canonicalUrl
-        }
+        "mainEntityOfPage": { "@type": "WebPage", "@id": post.canonicalUrl }
       };
       schemaScript.textContent = JSON.stringify(schemaData, null, 2);
     }
   }
 
-  // 6B. Category Post Grid Renderer
-  function renderCategoryPostGrid(categorySlug, subcategorySlug) {
+  // 6B. Category Hub Page Renderer (with dynamic Subcategory pills)
+  function renderCategoryPostGrid(categorySlug) {
     const grid = document.getElementById('categoryPostsGrid');
     if (!grid) return;
 
-    let filtered = window.BLOG_POSTS || [];
-    if (categorySlug) {
-      filtered = filtered.filter(p => p.category === categorySlug);
-    }
-    if (subcategorySlug) {
-      filtered = filtered.filter(p => p.subcategory === subcategorySlug);
+    const pathPrefix = grid.getAttribute('data-path-prefix') || '';
+    const posts = window.BLOG_POSTS || [];
+    const catObj = window.BLOG_CATEGORIES?.[categorySlug];
+    const subcatFilterContainer = document.getElementById('subcategoryFilters');
+
+    let activeSubcategory = '';
+
+    // Build subcategory pills dynamically from BLOG_CATEGORIES
+    if (subcatFilterContainer && catObj && catObj.subcategories) {
+      let pillsHtml = `<button class="filter-btn active" data-subcategory="">All in ${catObj.name}</button>`;
+      Object.keys(catObj.subcategories).forEach(subSlug => {
+        pillsHtml += `<button class="filter-btn" data-subcategory="${subSlug}">${catObj.subcategories[subSlug]}</button>`;
+      });
+      subcatFilterContainer.innerHTML = pillsHtml;
+
+      const pillButtons = subcatFilterContainer.querySelectorAll('.filter-btn');
+      pillButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          pillButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeSubcategory = btn.getAttribute('data-subcategory') || '';
+          updateGrid();
+        });
+      });
     }
 
-    if (filtered.length === 0) {
-      grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding: 3rem; background:#fff; border-radius: 12px; border:1px solid #e2e8f0;">
-        <h3>More articles coming soon!</h3>
-        <p style="color:#64748b; margin-top:0.5rem;">Our team is currently writing in-depth guides for this niche. Check back shortly or browse all categories.</p>
-        <a href="../../blog/index.html" class="btn btn-primary btn-sm" style="margin-top:1rem;">View All Blog Posts</a>
-      </div>`;
-      return;
+    function updateGrid() {
+      let filtered = posts.filter(p => p.category === categorySlug);
+      if (activeSubcategory) {
+        filtered = filtered.filter(p => p.subcategory === activeSubcategory);
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding: 3rem; background:#fff; border-radius: 12px; border:1px solid #e2e8f0;">
+          <h3>More articles coming soon!</h3>
+          <p style="color:#64748b; margin-top:0.5rem;">Our team is currently writing in-depth guides for this niche. Check back shortly or browse all categories.</p>
+          <a href="${pathPrefix}index.html" class="btn btn-primary btn-sm" style="margin-top:1rem;">View All Blog Posts</a>
+        </div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => createBlogCardHtml(p, pathPrefix)).join('');
     }
 
-    // Determine root prefix for relative linking
-    const isDeepSubcategory = !!subcategorySlug;
-    grid.innerHTML = filtered.map(p => createBlogCardHtml(p, isDeepSubcategory)).join('');
+    updateGrid();
   }
 
   // 6C. Blog Listing Page Renderer
   function renderBlogListing() {
     const grid = document.getElementById('blogPostsGrid');
     const searchInput = document.getElementById('blogSearchInput');
-    const categoryFilters = document.querySelectorAll('.blog-category-filter .filter-btn');
     const featuredContainer = document.getElementById('featuredPostContainer');
 
     const posts = window.BLOG_POSTS || [];
 
-    // Render Featured Post
     if (featuredContainer) {
       const featuredPost = posts.find(p => p.featured) || posts[0];
       if (featuredPost) {
@@ -442,14 +411,10 @@
       }
     }
 
-    let activeCategory = 'all';
     let searchQuery = '';
 
     function updateList() {
       let results = posts;
-      if (activeCategory !== 'all') {
-        results = results.filter(p => p.category === activeCategory);
-      }
       if (searchQuery.trim() !== '') {
         const q = searchQuery.toLowerCase();
         results = results.filter(p =>
@@ -465,19 +430,8 @@
           <p style="color: #64748b;">Try searching for different keywords like 'WhatsApp', 'Pest Control', or 'Cost'.</p>
         </div>`;
       } else {
-        grid.innerHTML = results.map(p => createBlogCardHtml(p, false)).join('');
+        grid.innerHTML = results.map(p => createBlogCardHtml(p, '')).join('');
       }
-    }
-
-    if (categoryFilters) {
-      categoryFilters.forEach(btn => {
-        btn.addEventListener('click', () => {
-          categoryFilters.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCategory = btn.getAttribute('data-category') || 'all';
-          updateList();
-        });
-      });
     }
 
     if (searchInput) {
@@ -490,12 +444,10 @@
     updateList();
   }
 
-  // Card HTML generator
-  function createBlogCardHtml(post, isDeepSubcategory) {
-    const postLink = isDeepSubcategory 
-      ? `../../post.html?slug=${post.slug}` 
-      : (window.location.pathname.includes('/blog/') ? `post.html?slug=${post.slug}` : `blog/post.html?slug=${post.slug}`);
-    
+  // Card HTML generator — pathPrefix = relative path to the /blog/ root folder
+  function createBlogCardHtml(post, pathPrefix) {
+    const prefix = pathPrefix || '';
+    const postLink = `${prefix}post.html?slug=${post.slug}`;
     const catName = window.BLOG_CATEGORIES?.[post.category]?.name || post.category;
 
     return `
@@ -546,9 +498,8 @@
       updateSlider(e.target.value);
     });
 
-    // Touch and mouse drag enhancement
     container.addEventListener('mousemove', (e) => {
-      if (e.buttons === 1) { // When primary button is held
+      if (e.buttons === 1) {
         const rect = container.getBoundingClientRect();
         let posX = ((e.clientX - rect.left) / rect.width) * 100;
         posX = Math.max(0, Math.min(100, posX));
@@ -580,7 +531,6 @@
       let baseVal = parseInt(selectedBaseRadio?.value || '8000', 10);
       let baseName = selectedBaseRadio?.getAttribute('data-name') || 'Basic Single-Page';
 
-      // Update base styling active class
       baseRadios.forEach(r => {
         const card = r.closest('.calc-radio-card');
         if (card) {
@@ -608,7 +558,6 @@
         }
       });
 
-      // Render Addon items list in summary
       if (addonsListEl) {
         if (selectedAddonNames.length === 0) {
           addonsListEl.innerHTML = '<em style="color: rgba(255,255,255,0.4);">No add-ons selected</em>';
@@ -627,7 +576,6 @@
         finalPriceEl.textContent = `₹${totalVal.toLocaleString('en-IN')}`;
       }
 
-      // Update dynamic WhatsApp enquiry link
       if (whatsappCtaEl) {
         let addonSummaryText = selectedAddonNames.length > 0
           ? `\n*Selected Add-ons:* ${selectedAddonNames.map(a => a.name).join(', ')}`
@@ -659,7 +607,6 @@
 
     if (!modalBackdrop) return;
 
-    // Elements inside modal
     const modalTitle = document.getElementById('modalDemoTitle');
     const clientBrand = document.getElementById('modalClientBrandName');
     const modalImg = document.getElementById('modalDemoImg');
@@ -721,7 +668,6 @@
       }
     });
 
-    // Device switch handler
     if (deviceBtns.length && frameContainer) {
       deviceBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -776,7 +722,6 @@
       }, 5000);
     }
 
-    // Trigger first toast after 4 seconds, then repeat every 24 seconds
     setTimeout(() => {
       showRandomActivity();
       setInterval(showRandomActivity, 24000);
