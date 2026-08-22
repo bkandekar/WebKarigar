@@ -8,7 +8,7 @@
 
   const CONFIG = {
     whatsappNumber: '{{WHATSAPP_NUMBER}}',
-    fallbackWhatsAppNumber: '919876543210',
+    fallbackWhatsAppNumber: '918329931123',
     defaultEnquiryMessage: 'Hello Webkar Studio, I am interested in getting a website for my business.',
     siteUrl: 'https://webkarstudio.in',
     brandName: 'Webkar Studio',
@@ -157,7 +157,7 @@
       const packageTier = document.getElementById('clientPackage')?.value || 'Basic / Standard';
       const notes = document.getElementById('clientNotes')?.value || '';
 
-      const msg = `*New Website Enquiry - Webkar Studio*\n\n` +
+      const msg = `*New Website Enquiry - WebKarigar*\n\n` +
                   `*Name:* ${name}\n` +
                   `*Phone/WhatsApp:* ${phone}\n` +
                   `*Business Type:* ${businessType}\n` +
@@ -244,7 +244,7 @@
       return;
     }
 
-    document.title = `${post.title} | Webkar Studio Blog`;
+    document.title = `${post.title} | WebKarigar Blog`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', post.excerpt);
 
@@ -334,11 +334,11 @@
         "headline": post.title,
         "description": post.excerpt,
         "image": resolveAsset(post.featuredImage),
-        "author": { "@type": "Organization", "name": "Webkar Studio" },
+        "author": { "@type": "Organization", "name": "WebKarigar" },
         "publisher": {
           "@type": "Organization",
           "name": "Webkar Studio (ebookcharm Web Services)",
-          "logo": { "@type": "ImageObject", "url": "https://webkarstudio.in/images/logo.png" }
+          "logo": { "@type": "ImageObject", "url": "https://webkarigar.in/images/logo.png" }
         },
         "datePublished": post.date,
         "dateModified": post.modifiedDate || post.date,
