@@ -15,6 +15,17 @@
     parentBrand: 'ebookcharm Web Services'
   };
 
+  // Detects whether the site is running under a GitHub Pages project subpath
+  // (e.g. bkandekar.github.io/WebKarigar/) or at a root/custom domain
+  // (e.g. webkarstudio.in/). Root-relative asset paths are resolved against
+  // this base so featured images work correctly in both cases.
+  CONFIG.siteBase = (function () {
+    const path = window.location.pathname;
+    const match = path.match(/^\/([^\/]+)\//);
+    const isGithubIoProject = window.location.hostname.endsWith('github.io') && match;
+    return isGithubIoProject ? `/${match[1]}/` : '/';
+  })();
+
   window.WEBAKR_CONFIG = CONFIG;
 
   function getWhatsAppUrl(customText) {
@@ -26,6 +37,17 @@
     return `https://wa.me/${cleanNumber}?text=${message}`;
   }
   window.getWhatsAppUrl = getWhatsAppUrl;
+
+  // Resolves a root-relative asset path (e.g. "images/foo.webp") against the
+  // detected site base, so it loads correctly regardless of page depth or
+  // whether the site is served from a GitHub Pages subpath or a custom domain.
+  // Absolute URLs (http/https) and data URIs are passed through unchanged.
+  function resolveAsset(path) {
+    if (!path) return path;
+    if (path.startsWith('http') || path.startsWith('data:')) return path;
+    return CONFIG.siteBase + path.replace(/^\/+/, '');
+  }
+  window.resolveAsset = resolveAsset;
 
   document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
@@ -250,7 +272,7 @@
 
     const postImage = document.getElementById('postFeaturedImage');
     if (postImage) {
-      postImage.src = post.featuredImage;
+      postImage.src = resolveAsset(post.featuredImage);
       postImage.alt = post.title;
     }
 
@@ -311,7 +333,7 @@
         "@type": "Article",
         "headline": post.title,
         "description": post.excerpt,
-        "image": post.featuredImage,
+        "image": resolveAsset(post.featuredImage),
         "author": { "@type": "Organization", "name": "Webkar Studio" },
         "publisher": {
           "@type": "Organization",
@@ -391,7 +413,7 @@
       if (featuredPost) {
         featuredContainer.innerHTML = `
           <div class="blog-card" style="display: grid; grid-template-columns: 1.2fr 1fr; border-color: var(--color-primary);">
-            <img src="${featuredPost.featuredImage}" alt="${featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy">
+            <img src="${resolveAsset(featuredPost.featuredImage)}" alt="${featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy">
             <div class="blog-card-body" style="padding: 2.25rem;">
               <div class="blog-card-meta">
                 <span class="section-badge" style="margin: 0; font-size: 0.75rem;">⭐ Featured Guide</span>
@@ -452,7 +474,7 @@
 
     return `
       <article class="blog-card">
-        <img src="${post.featuredImage}" alt="${post.title}" class="blog-card-img" loading="lazy">
+        <img src="${resolveAsset(post.featuredImage)}" alt="${post.title}" class="blog-card-img" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span style="font-weight: 700; color: var(--color-primary);">${catName}</span>
