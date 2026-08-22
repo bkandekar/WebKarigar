@@ -759,7 +759,7 @@ window.BLOG_POSTS = [
     date: "2026-08-21",
     modifiedDate: "2026-08-21",
     author: "Balu Kandekar",
-    featuredImage:"images/blog/beauty-parlour-website-more-walk-in-customers.webp",
+    featuredImage:"featuredImage:"/images/beauty-parlour-website-more-walk-in-customers.webp",",
     excerpt: "Learn how a professional beauty parlour website brings more walk-in customers. Practical ways your website turns Google searches into real appointments and visits.",
     content: `<h1>How a Beauty Parlour Website Helps Get More Walk-in Customers</h1>
 
