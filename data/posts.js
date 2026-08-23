@@ -1571,7 +1571,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   date: "2026-08-23",
   modifiedDate: "2026-08-23",
   author: "Balu Kandekar",
-  featuredImage: "images/blog/ganpati-mandap-decorator-website-leads-strategy.webp",
+  featuredImage: "images/ganpati-mandap-decorator-website-leads-strategy.webp",
   excerpt: "Ganpati mandap decorators can get more customers online with a simple website, Google visibility and WhatsApp buttons. Learn the practical lead generation strategy that works before and during festival season.",
   content: `<h1>How Can Ganpati Mandap Decorators Get More Customers Online? A Website + Google + WhatsApp Lead Generation Strategy</h1>
 
