@@ -969,16 +969,16 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
     tags: ["beauty parlour website", "walk-in customers", "local business website", "salon website benefits", "get more customers"],
     readingTime: "11 min read",
     featured: false,
-    relatedPosts: ["beauty-parlour-website-cost-india-2026", "must-have-features-beauty-parlour-website", "beauty-parlour-website-vs-instagram"],
+    relatedPosts: [2, 4, 8],
     canonicalUrl: "/blog/post.html?slug=how-beauty-parlour-website-helps-get-more-walk-in-customers"
   },
 
 {
-  id: "12",
+  id: 12,
   title: "Why Your Ganpati Mandap Decoration Business Needs a Website: Get More Customers and WhatsApp Leads from Google",
   slug: "ganpati-mandap-decoration-business-website-more-customers-whatsapp-leads",
-  category: "Business Growth",
-  subcategory: "Get More Local Leads",
+  category: "business-growth",
+  subcategory: "get-more-local-leads",
   date: "2026-08-08",
   modifiedDate: "2026-08-08",
   author: "Balu Kandekar",
@@ -1419,19 +1419,15 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   ],
   readingTime: "10 min read",
   featured: false,
-  relatedPosts: [
-    "ganpati-decorators-google-local-leads",
-    "ganpati-decoration-website-features",
-    "whatsapp-vs-website-ganpati-decoration-business"
-  ],
+  relatedPosts: [1, 6, 9],
   canonicalUrl: "/blog/post.html?slug=ganpati-mandap-decoration-business-website-more-customers-whatsapp-leads"
 },
 {
-  id: "13",
+  id: 13,
   title: "How to Build a Website for a Ganpati Decoration Business: Complete Guide with Services, Gallery, WhatsApp & Enquiry Form",
   slug: "ganpati-decoration-business-website",
-  category: "Local Business Websites",
-  subcategory: "Interior Designer Websites",
+  category: "local-business-websites",
+  subcategory: "interior-designer-websites",
   date: "2026-08-23",
   modifiedDate: "2026-08-23",
   author: "Balu Kandekar",
@@ -1563,7 +1559,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   tags: ["Ganpati Decoration", "Local Business", "Website Design", "Festival Business", "WhatsApp Enquiry"],
   readingTime: "9 min read",
   featured: false,
-  relatedPosts: ["home-vs-mandal-ganpati-decoration-pricing", "ganpati-decoration-cost-guide", "website-vs-instagram-local-business"],
+  relatedPosts: [6, 9, 10],
   canonicalUrl: "/blog/post.html?slug=ganpati-decoration-business-website"
 }
-
+]
