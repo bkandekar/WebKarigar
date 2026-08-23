@@ -49,6 +49,17 @@
   }
   window.resolveAsset = resolveAsset;
 
+  // Returns true if a post's date has arrived (or has no date). Posts with a
+  // future date are treated as "scheduled" and stay hidden from every blog
+  // view until that date arrives, based on the visitor's own device clock.
+  function isPostPublished(post) {
+    if (!post || !post.date) return true;
+    const publishDate = new Date(post.date + 'T00:00:00');
+    const now = new Date();
+    return publishDate <= now;
+  }
+  window.isPostPublished = isPostPublished;
+
   document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initWhatsAppLinks();
@@ -234,8 +245,15 @@
     const posts = window.BLOG_POSTS || [];
 
     let post = posts.find(p => p.slug === slug);
+
+    if (post && !isPostPublished(post)) {
+      const container = document.getElementById('singlePostContainer');
+      if (container) container.innerHTML = '<p>This article is not published yet. Please check back soon.</p>';
+      return;
+    }
+
     if (!post && posts.length > 0) {
-      post = posts[0];
+      post = posts.find(isPostPublished) || posts[0];
     }
 
     if (!post) {
@@ -322,7 +340,7 @@
 
     const relatedGrid = document.getElementById('relatedPostsGrid');
     if (relatedGrid) {
-      const otherPosts = posts.filter(p => p.id !== post.id && (p.category === post.category || p.featured)).slice(0, 3);
+      const otherPosts = posts.filter(p => p.id !== post.id && isPostPublished(p) && (p.category === post.category || p.featured)).slice(0, 3);
       relatedGrid.innerHTML = otherPosts.map(p => createBlogCardHtml(p, '')).join('');
     }
 
@@ -354,7 +372,7 @@
     if (!grid) return;
 
     const pathPrefix = grid.getAttribute('data-path-prefix') || '';
-    const posts = window.BLOG_POSTS || [];
+    const posts = (window.BLOG_POSTS || []).filter(isPostPublished);
     const catObj = window.BLOG_CATEGORIES?.[categorySlug];
     const subcatFilterContainer = document.getElementById('subcategoryFilters');
 
@@ -406,7 +424,7 @@
     const searchInput = document.getElementById('blogSearchInput');
     const featuredContainer = document.getElementById('featuredPostContainer');
 
-    const posts = window.BLOG_POSTS || [];
+    const posts = (window.BLOG_POSTS || []).filter(isPostPublished);
 
     if (featuredContainer) {
       const featuredPost = posts.find(p => p.featured) || posts[0];
