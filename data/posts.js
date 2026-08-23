@@ -1424,5 +1424,146 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
     "whatsapp-vs-website-ganpati-decoration-business"
   ],
   canonicalUrl: "/blog/post.html?slug=ganpati-mandap-decoration-business-website-more-customers-whatsapp-leads"
+},
+  {
+  id: "13",
+  title: "How to Build a Website for a Ganpati Decoration Business: Complete Guide with Services, Gallery, WhatsApp & Enquiry Form",
+  slug: "ganpati-decoration-business-website",
+  category: "Local Business Websites",
+  subcategory: "Interior Designer Websites",
+  date: "2026-08-23",
+  modifiedDate: "2026-08-23",
+  author: "Balu Kandekar",
+  featuredImage: "images/ganpati-decoration-business-website-guide.webp",
+  excerpt: "Planning a website for your Ganpati decoration business? See what services, gallery, and WhatsApp features actually bring bookings — with a real example.",
+  content: "<div class="quick-answer">
+<p><strong>Quick Answer:</strong> A Ganpati decoration business website should show a photo gallery of past work, list your decoration packages with rough pricing, include a WhatsApp enquiry button for instant contact, and let people check availability before the Ganesh Chaturthi rush begins. A simple 3–4 page site does this well — you don't need anything complicated.</p>
+</div>
+
+<p>Every year around July, decoration business owners start getting the same message from clients: "Bhaऊ, is saal Ganpati sajावat कोण करतंय? Instagram वर फोटो पाठवा ना." And every year, the same scramble happens — sending WhatsApp photos one by one, losing track of who enquired, and missing bookings because someone found a competitor's page first.</p>
+
+<p>If you run a Ganpati decoration business, this article walks through exactly what a website should include, why it matters more during festival season than any other time of year, and what mistakes to avoid when getting one built.</p>
+
+<h2>Why a Ganpati Decoration Business Actually Needs a Website</h2>
+
+<p>Most decoration businesses rely entirely on Instagram and word of mouth. That works, but it has real limits. Instagram photos get buried under new posts within days. A customer searching Google for "Ganpati decoration near me" won't find an Instagram-only business easily — Google doesn't index Instagram posts the way it indexes a proper website page.</p>
+
+<p>A website also does something Instagram can't: it lets a visitor see your full range of work in one place, check your service area, and enquire directly — without needing to follow you, scroll through months of posts, or send a cold DM.</p>
+
+<p>Take a decorator in Kalyan who does roughly 15–20 home Ganpati setups every season. Before having a proper page to send people, half the enquiries would ask the same questions — "kiti packages आहेत," "किंमत काय," "photos पाठवा." A one-page site that answers these upfront cuts down repetitive back-and-forth significantly, leaving WhatsApp free for people who are actually ready to book.</p>
+
+<h2>What Actually Belongs on the Website</h2>
+
+<h3>1. A Real Photo Gallery — Organized by Style</h3>
+
+<p>This is the single most important section. People choosing a decorator are choosing a look, not just a service. Group your gallery by decoration style — traditional, theme-based, eco-friendly/thermocol-free, flower decoration, small budget setups, premium setups. A visitor should be able to find "something like what I want" within seconds, not scroll endlessly.</p>
+
+<p>Use real photos of your own completed work. Avoid stock images entirely — for this kind of business, authenticity is the whole sale.</p>
+
+<h3>2. Clear Packages, Even If Prices Are Approximate</h3>
+
+<p>You don't need exact pricing published if rates vary by size and materials. But giving a rough starting range for each package (Basic, Standard, Premium, for example) helps filter serious enquiries from casual ones. A comparison table works well here:</p>
+
+<table>
+<thead>
+<tr><th>Package</th><th>What's Included</th><th>Best For</th></tr>
+</thead>
+<tbody>
+<tr><td>Basic Setup</td><td>Simple mandap, standard flowers, basic lighting</td><td>Small home Ganpati, tight budget</td></tr>
+<tr><td>Theme Decoration</td><td>Custom theme, backdrop, premium lighting</td><td>Home setups wanting a distinct look</td></tr>
+<tr><td>Mandal / Society Package</td><td>Large mandap, stage setup, sound arrangement support</td><td>Housing society or mandal-level decoration</td></tr>
+</tbody>
+</table>
+
+<h3>3. A WhatsApp Button — Not Just a Contact Form</h3>
+
+<p>Decoration businesses run on quick, personal conversations. A generic contact form that emails you later isn't how this audience behaves — they want to send a message and get a reply the same day, often the same hour, especially in the two weeks before Ganesh Chaturthi. A floating WhatsApp button that opens a chat with a pre-filled message ("Hi, I'm interested in Ganpati decoration — can you share availability?") removes friction completely.</p>
+
+<h3>4. An Availability or Booking Indicator</h3>
+
+<p>Decoration bookings cluster heavily into a two-to-three week window. A simple line like "Currently taking bookings for [year] — limited slots remaining" creates gentle urgency and sets expectations honestly, without needing a full booking system.</p>
+
+<h3>5. Service Area and Past Work Locations</h3>
+
+<p>Mention the areas you cover — specific localities, not just a city name. "Serving Dombivli, Kalyan, and Thane" tells a searcher immediately whether you're relevant to them, and it helps local search visibility as well.</p>
+
+<h3>6. Simple Testimonials — Real Ones Only</h3>
+
+<p>Even two or three short quotes from past clients (with their first name and area, with permission) add credibility. Skip this section entirely rather than inventing testimonials — a missing section is far less damaging than an obviously fake one.</p>
+
+<h2>Website vs. Instagram-Only: A Fair Comparison</h2>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>Instagram Only</th><th>Website + Instagram</th></tr>
+</thead>
+<tbody>
+<tr><td>Discoverable on Google Search</td><td>Rarely</td><td>Yes, with proper setup</td></tr>
+<tr><td>Shows full work history at once</td><td>No — buried in posts</td><td>Yes — organized gallery</td></tr>
+<tr><td>Answers pricing/package questions upfront</td><td>No</td><td>Yes</td></tr>
+<tr><td>Looks credible to first-time enquirers</td><td>Moderate</td><td>Higher — feels established</td></tr>
+<tr><td>Works well for repeat, loyal followers</td><td>Yes</td><td>Yes</td></tr>
+</tbody>
+</table>
+
+<p>The two aren't competing — Instagram is great for daily updates and reach, while the website becomes the place people land when they're seriously comparing decorators and ready to enquire. If you already use <a href="/blog/website-benefits/">Instagram actively for your business</a>, a website complements it rather than replacing it.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<ul>
+<li><strong>Overloading the homepage with every photo you've ever taken.</strong> A curated gallery of your best 20–30 photos converts better than 200 unsorted ones.</li>
+<li><strong>Making the WhatsApp button hard to find.</strong> It should be visible on every page, not buried in a "Contact" tab.</li>
+<li><strong>Skipping mobile testing.</strong> Almost all enquiries for a business like this come from a phone. If the gallery images load slowly or the WhatsApp button is hard to tap, you lose the enquiry before it starts.</li>
+<li><strong>Building a site once and never updating photos.</strong> Refresh the gallery each year with the latest work — an outdated gallery signals an inactive business.</li>
+</ul>
+
+<div class="cta-mid">
+<p><strong>Need a professional website for your business?</strong> Webkar Studio builds clean, mobile-friendly websites designed to make it easy for customers to see your work and get in touch. <a href="/portfolio.html">View Portfolio</a></p>
+</div>
+
+<h2>What to Ask Before Getting a Website Built</h2>
+
+<p>If you're comparing options for getting this built, a few practical questions help:</p>
+
+<ul>
+<li>Can I update the gallery myself next year, or does the site need a developer every time?</li>
+<li>Will it work properly on a phone screen, not just a laptop?</li>
+<li>Is the WhatsApp number editable if I change my business number?</li>
+<li>How long does it take to go live before festival season starts?</li>
+</ul>
+
+<p>A static, simple site (no complicated backend, no monthly software fees) is usually the right fit for a seasonal business like this — it's lower cost to build and maintain than a full e-commerce-style platform, and it does everything this kind of business actually needs. You can compare typical <a href="/blog/website-cost-buying-guides/">website costs for local businesses in India</a> if budget is a factor.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Do I need a website if I already have a good Instagram page?</h3>
+<p>Not strictly, but a website adds Google Search visibility and gives you one clean place to send enquiries, without asking people to scroll through your feed.</p>
+
+<h3>How much does a website like this typically cost?</h3>
+<p>For a decoration business, a simple 3–4 page site with a gallery, packages, and WhatsApp integration is usually one of the more affordable website types to build, since it doesn't need complex features like online payments or booking calendars.</p>
+
+<h3>Can I update the photo gallery myself every year?</h3>
+<p>This depends on how the site is built. Ask specifically whether you'll be able to add or replace photos yourself, or whether it needs a developer each season — this matters a lot for a seasonal business.</p>
+
+<h3>Should I list exact prices on the website?</h3>
+<p>It's optional. A rough starting range per package is usually enough to filter genuine enquiries without locking you into fixed pricing for every job.</p>
+
+<h3>Will a website help me get mandal or society-level bookings, not just home setups?</h3>
+<p>Yes — larger clients like housing societies and mandals often check a decorator's past work online before shortlisting, and a website with a strong gallery makes that comparison easier for them.</p>
+
+<h3>What's the biggest mistake decoration businesses make with their website?</h3>
+<p>Building it once and never updating the gallery. A site with only last year's photos, or older, looks inactive even if the business is thriving.</p>
+
+<div class="cta-end">
+<p><strong>Ready to get your decoration business online before the next season?</strong> <a href="/contact.html">Contact Webkar Studio</a> or <a href="https://wa.me/{{WHATSAPP_NUMBER}}">chat on WhatsApp</a> to get a free demo.</p>
+</div>",
+  primaryKeyword: "Ganpati decoration business website",
+  secondaryKeywords: ["website for Ganpati decoration", "Ganesh decoration website design", "Ganpati mandal website", "decoration business website India", "Ganesh Chaturthi decoration services website", "event decoration website design", "website for decorators", "Ganpati decoration WhatsApp enquiry", "online gallery for decoration business", "Ganpati decoration portfolio website"],
+  tags: ["Ganpati Decoration", "Local Business", "Website Design", "Festival Business", "WhatsApp Enquiry"],
+  readingTime: "9 min read",
+  featured: false,
+  relatedPosts: ["home-vs-mandal-ganpati-decoration-pricing", "ganpati-decoration-cost-guide", "website-vs-instagram-local-business"],
+  canonicalUrl: "/blog/post.html?slug=ganpati-decoration-business-website"
 }
+
 ]
