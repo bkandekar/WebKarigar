@@ -1424,8 +1424,10 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
     "whatsapp-vs-website-ganpati-decoration-business"
   ],
   canonicalUrl: "/blog/post.html?slug=ganpati-mandap-decoration-business-website-more-customers-whatsapp-leads"
-},
-  {
+
+}
+,
+{
   id: "13",
   title: "How to Build a Website for a Ganpati Decoration Business: Complete Guide with Services, Gallery, WhatsApp & Enquiry Form",
   slug: "ganpati-decoration-business-website",
