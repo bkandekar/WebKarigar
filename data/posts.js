@@ -2087,7 +2087,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
 },
   
 ]{
-  "id": 18,
+  "id": 17,
   "title": "Why Customers Choose Another Ganpati Decorator Before Contacting You",
   "slug": "why-customers-choose-another-ganpati-decorator",
   "category": "Business Growth",
@@ -2129,6 +2129,6 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
     "response-time-decoration-enquiries",
     "google-business-profile-decorators",
     "free-vs-custom-website-local-business"
-  ],
-  "canonicalUrl": "/blog/post.html?slug=why-customers-choose-another-ganpati-decorator"
+  ]
+
 }
