@@ -59,7 +59,6 @@
     const now = new Date();
     return publishDate <= now;
   }
-  }
   window.isPostPublished = isPostPublished;
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -296,7 +295,7 @@
       postImage.alt = post.title;
     }
 
-    const const contentEl = document.getElementById('postMainContent');
+    const contentEl = document.getElementById('postMainContent');
     if (contentEl) {
       try {
         const htmlRes = await fetch(`content/${post.slug}.html?t=` + new Date().getTime());
