@@ -2138,7 +2138,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   slug: "website-features-ganpati-decoration-visitors-into-leads",
   category: "business-growth",
   subcategory: "convert-visitors-into-enquiries",
-  date: "2026-08-27T017:00:00+05:30",
+  date: "2026-08-27T09:00:00+05:30",
 modifiedDate: "2026-08-27T09:00:00+05:30",
   author: "Balu Kandekar",
   featuredImage: "imgages/website-features-ganpati-decoration-leads.webp",
