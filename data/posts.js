@@ -2141,7 +2141,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   date: "2026-08-27T09:00:00+05:30",
 modifiedDate: "2026-08-27T09:00:00+05:30",
   author: "Balu Kandekar",
-  featuredImage: "images/website-features-ganpati-decoration-leads.webp",
+  featuredImage: "images/website-features-ganpati-decoration-leads-400.webp",
   excerpt: "See the 5 website features that actually convert visitors into ganpati decoration enquiries — WhatsApp button, gallery, service area, form, and reviews.",
   primaryKeyword: "website features for ganpati decoration business",
   secondaryKeywords: ["convert website visitors into leads", "ganpati decoration website features", "whatsapp button for decoration website", "photo gallery for decoration business", "enquiry form for decoration website"],
