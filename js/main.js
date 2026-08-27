@@ -53,10 +53,12 @@
   // future date are treated as "scheduled" and stay hidden from every blog
   // view until that date arrives, based on the visitor's own device clock.
   function isPostPublished(post) {
-    if (!post || !post.date) return true;
-    const publishDate = new Date(post.date + 'T00:00:00');
+    // Accepts either a plain date ("2026-08-28") or a full datetime
+    // with time + timezone ("2026-08-28T09:00:00+05:30") in post.date
+    const publishDate = post.date.includes('T') ? new Date(post.date) : new Date(post.date + 'T00:00:00');
     const now = new Date();
     return publishDate <= now;
+  }
   }
   window.isPostPublished = isPostPublished;
 
@@ -238,8 +240,8 @@
     }
   }
 
-  // 6A. Single Post Page Renderer
-  function renderSinglePost() {
+// 6A. Single Post Page Renderer
+  async function renderSinglePost() {
     const urlParams = new URLSearchParams(window.location.search);
     const slug = urlParams.get('slug');
     const posts = window.BLOG_POSTS || [];
@@ -294,9 +296,16 @@
       postImage.alt = post.title;
     }
 
-    const contentEl = document.getElementById('postMainContent');
+    const const contentEl = document.getElementById('postMainContent');
     if (contentEl) {
-      contentEl.innerHTML = post.content;
+      try {
+        const htmlRes = await fetch(`content/${post.slug}.html?t=` + new Date().getTime());
+        if (!htmlRes.ok) throw new Error('Content file not found');
+        contentEl.innerHTML = await htmlRes.text();
+      } catch (err) {
+        console.warn(`Could not fetch blog/content/${post.slug}.html, falling back:`, err);
+        contentEl.innerHTML = post.content || `<p>${post.excerpt}</p>`;
+      }
 
       const headings = contentEl.querySelectorAll('h2');
       const tocList = document.getElementById('tocList');
