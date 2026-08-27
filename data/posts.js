@@ -2004,7 +2004,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   },
 
 {
-  id: 15,
+  id: 16,
   title: "Website vs Instagram for Ganpati Mandap Decoration Businesses: Which One Helps You Get More Customers?",
  slug: "website-vs-instagram-ganpati-mandap-decoration",
   category: "Website Benefits",
@@ -2050,7 +2050,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   canonicalUrl: "/blog/post.html?slug=website-vs-instagram-ganpati-mandap-decoration"
 },
   {
-  "id": "16",
+  "id": "17",
   "title": "How to Get More Ganpati Decoration Enquiries Using a Website",
   "slug": "ganpati-decoration-enquiries-using-website",
   "category": "Business Growth",
@@ -2086,7 +2086,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   "canonicalUrl": "/blog/post.html?slug=ganpati-decoration-enquiries-using-website"
 },
 {
-  "id": 17,
+  "id": 18,
   "title": "Why Customers Choose Another Ganpati Decorator Before Contacting You",
   "slug": "why-customers-choose-another-ganpati-decorator",
   "category": "Business Growth",
@@ -2133,7 +2133,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
 },
 
   {
-  id: 18,
+  id: 19,
   title: "5 Website Features That Can Turn Ganpati Decoration Visitors into Leads",
   slug: "website-features-ganpati-decoration-visitors-into-leads",
   category: "business-growth",
@@ -2141,7 +2141,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   date: "2026-08-27T09:00:00+05:30",
 modifiedDate: "2026-08-27T09:00:00+05:30",
   author: "Balu Kandekar",
-  featuredImage: "imgages/website-features-ganpati-decoration-leads.webp",
+  featuredImage: "images/website-features-ganpati-decoration-leads.webp",
   excerpt: "See the 5 website features that actually convert visitors into ganpati decoration enquiries — WhatsApp button, gallery, service area, form, and reviews.",
   primaryKeyword: "website features for ganpati decoration business",
   secondaryKeywords: ["convert website visitors into leads", "ganpati decoration website features", "whatsapp button for decoration website", "photo gallery for decoration business", "enquiry form for decoration website"],
