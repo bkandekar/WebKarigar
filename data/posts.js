@@ -2085,8 +2085,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   ],
   "canonicalUrl": "/blog/post.html?slug=ganpati-decoration-enquiries-using-website"
 },
-  
-]{
+{
   "id": 17,
   "title": "Why Customers Choose Another Ganpati Decorator Before Contacting You",
   "slug": "why-customers-choose-another-ganpati-decorator",
