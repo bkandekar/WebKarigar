@@ -439,7 +439,7 @@
       if (featuredPost) {
         featuredContainer.innerHTML = `
           <div class="blog-card" style="display: grid; grid-template-columns: 1.2fr 1fr; border-color: var(--color-primary);">
-            <img src="${resolveAsset(featuredPost.featuredImage)}" alt="${featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy">
+            <img src="${resolveAsset(featuredPost.featuredImage)}" alt="${featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy" decoding="async" width="600" height="338">
             <div class="blog-card-body" style="padding: 2.25rem;">
               <div class="blog-card-meta">
                 <span class="section-badge" style="margin: 0; font-size: 0.75rem;">⭐ Featured Guide</span>
@@ -500,7 +500,7 @@
 
     return `
       <article class="blog-card">
-        <img src="${resolveAsset(post.featuredImage)}" alt="${post.title}" class="blog-card-img" loading="lazy">
+   <img src="${resolveAsset(post.featuredImage)}" alt="${post.title}" class="blog-card-img" loading="lazy" decoding="async" width="400" height="225">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span style="font-weight: 700; color: var(--color-primary);">${catName}</span>
