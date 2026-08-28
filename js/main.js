@@ -34,7 +34,7 @@
       : CONFIG.fallbackWhatsAppNumber;
     const cleanNumber = rawNumber.replace(/[^0-9]/g, '');
     const message = encodeURIComponent(customText || CONFIG.defaultEnquiryMessage);
-    return `https://wa.me/\( {cleanNumber}?text= \){message}`;
+    return `https://wa.me/${cleanNumber}?text=${message}`;
   }
   window.getWhatsAppUrl = getWhatsAppUrl;
 
@@ -335,7 +335,7 @@
     const postTitleEnc = encodeURIComponent(post.title);
 
     const waShare = document.getElementById('shareWhatsApp');
-    if (waShare) waShare.href = `https://api.whatsapp.com/send?text=\( {postTitleEnc}%20 \){currentUrl}`;
+    if (waShare) waShare.href = `https://api.whatsapp.com/send?text=${postTitleEnc}%20${currentUrl}`;
 
     const fbShare = document.getElementById('shareFacebook');
     if (fbShare) fbShare.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
@@ -344,7 +344,7 @@
     if (liShare) liShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
 
     const xShare = document.getElementById('shareTwitter');
-    if (xShare) xShare.href = `https://twitter.com/intent/tweet?text=\( {postTitleEnc}&url= \){currentUrl}`;
+    if (xShare) xShare.href = `https://twitter.com/intent/tweet?text=${postTitleEnc}&url=${currentUrl}`;
 
     const relatedGrid = document.getElementById('relatedPostsGrid');
     if (relatedGrid) {
@@ -390,7 +390,7 @@
     if (subcatFilterContainer && catObj && catObj.subcategories) {
       let pillsHtml = `<button class="filter-btn active" data-subcategory="">All in ${catObj.name}</button>`;
       Object.keys(catObj.subcategories).forEach(subSlug => {
-        pillsHtml += `<button class="filter-btn" data-subcategory="\( {subSlug}"> \){catObj.subcategories[subSlug]}</button>`;
+        pillsHtml += `<button class="filter-btn" data-subcategory="${subSlug}">${catObj.subcategories[subSlug]}</button>`;
       });
       subcatFilterContainer.innerHTML = pillsHtml;
 
@@ -439,7 +439,7 @@
       if (featuredPost) {
         featuredContainer.innerHTML = `
           <div class="blog-card" style="display: grid; grid-template-columns: 1.2fr 1fr; border-color: var(--color-primary);">
-            <img src="\( {resolveAsset(featuredPost.featuredImage)}" alt=" \){featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy" decoding="async" width="600" height="338">
+            <img src="${resolveAsset(featuredPost.featuredImage)}" alt="${featuredPost.title}" class="blog-card-img" style="height: 100%; min-height: 280px;" loading="lazy" decoding="async" width="600" height="338">
             <div class="blog-card-body" style="padding: 2.25rem;">
               <div class="blog-card-meta">
                 <span class="section-badge" style="margin: 0; font-size: 0.75rem;">⭐ Featured Guide</span>
@@ -447,7 +447,7 @@
                 <span>${featuredPost.readingTime}</span>
               </div>
               <h2 style="font-size: 1.45rem; margin: 0.75rem 0 1rem 0;">
-                <a href="post.html?slug=\( {featuredPost.slug}"> \){featuredPost.title}</a>
+                <a href="post.html?slug=${featuredPost.slug}">${featuredPost.title}</a>
               </h2>
               <p class="blog-card-excerpt">${featuredPost.excerpt}</p>
               <div style="margin-top: auto;">
@@ -495,12 +495,12 @@
   // Card HTML generator — pathPrefix = relative path to the /blog/ root folder
   function createBlogCardHtml(post, pathPrefix) {
     const prefix = pathPrefix || '';
-    const postLink = `\( {prefix}post.html?slug= \){post.slug}`;
+    const postLink = `${prefix}post.html?slug=${post.slug}`;
     const catName = window.BLOG_CATEGORIES?.[post.category]?.name || post.category;
 
     return `
       <article class="blog-card">
-   <img src="\( {resolveAsset(post.featuredImage)}" alt=" \){post.title}" class="blog-card-img" loading="lazy" decoding="async" width="400" height="225">
+   <img src="${resolveAsset(post.featuredImage)}" alt="${post.title}" class="blog-card-img" loading="lazy" decoding="async" width="400" height="225">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span style="font-weight: 700; color: var(--color-primary);">${catName}</span>
@@ -508,7 +508,7 @@
             <span>${post.readingTime}</span>
           </div>
           <h3 class="blog-card-title">
-            <a href="\( {postLink}"> \){post.title}</a>
+            <a href="${postLink}">${post.title}</a>
           </h3>
           <p class="blog-card-excerpt">${post.excerpt}</p>
           <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
@@ -629,7 +629,7 @@
           ? `\n*Selected Add-ons:* ${selectedAddonNames.map(a => a.name).join(', ')}`
           : '';
         const msg = `*Website Estimate Request - WebKarigar*\n\n` +
-                    `*Base Tier:* \( {baseName} (₹ \){baseVal.toLocaleString('en-IN')})` +
+                    `*Base Tier:* ${baseName} (₹${baseVal.toLocaleString('en-IN')})` +
                     addonSummaryText + `\n` +
                     `*Estimated Total:* ₹${totalVal.toLocaleString('en-IN')} (One-time, zero server costs)\n\n` +
                     `Please share the next steps and sample designs for my business!`;
