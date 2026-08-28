@@ -2151,5 +2151,24 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   relatedPosts: [],
   canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=website-features-ganpati-decoration-visitors-into-leads",
      
-  }
+  },
+  {
+  id: 20,
+  title: "Your Decorations Work Is Amazing—But Can Customers Find You Online?",
+  slug: "your-decorations-work-is-amazing-but-can-customers-find-you-online",
+  category: "website-benefits",
+  subcategory: "why-businesses-need-websites",
+  date: "2026-08-28T09:00:00+05:30",
+  modifiedDate: "2026-08-28T09:00:00+05:30",
+  author: "Balu Kandekar",
+  featuredImage: "images/decorations-work-amazing-customers-find-online.webp",
+  excerpt: "Your decoration work is excellent, but can new customers find you on Google? See why a simple website helps Maharashtra decorators get more enquiries beyond Instagram and referrals.",
+  primaryKeyword: "decorations business website",
+  secondaryKeywords: ["ganpati decoration website", "mandap decorator website", "event decorator website Maharashtra"],
+  tags: ["decorations website", "ganpati decorators", "mandap decoration", "local business website", "Instagram vs website"],
+  readingTime: "8 min read",
+  featured: false,
+  relatedPosts: [5, 7, 9],
+  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=your-decorations-work-is-amazing-but-can-customers-find-you-online"
+}
 ]
