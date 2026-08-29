@@ -2129,5 +2129,23 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   relatedPosts: [5, 7, 9],
   canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=your-decorations-work-is-amazing-but-can-customers-find-you-online"
 },
-  
+  {
+  id: 21,
+  title: "How to Rank Your Beauty Parlour Website on Google Maps",
+  slug: "beauty-parlour-google-maps-ranking",
+  category: "local-business-websites",
+  subcategory: "beauty-parlour-websites",
+  date: "2026-08-29T09:00:00+05:30",
+  modifiedDate: "2026-08-29T09:00:00+05:30",
+  author: "Balu Kandekar",
+  featuredImage: "images/blog/beauty-parlour-google-maps-ranking-guide.webp",
+  excerpt: "Beauty parlour not showing up on Google Maps? Here's what actually affects your ranking — and where a proper website fits in. Practical, no fluff.",
+  primaryKeyword: "how to rank beauty parlour website on Google Maps",
+  secondaryKeywords: ["beauty parlour Google My Business ranking", "Google Maps SEO for salons", "local SEO for beauty parlour", "get beauty parlour found on Google Maps", "Google Business Profile for parlour", "beauty salon local search ranking", "rank higher on Google Maps", "website for beauty parlour Google visibility", "local pack ranking beauty business", "Google Maps optimization for small business", "beauty parlour near me search ranking", "salon Google reviews ranking", "website vs Google Business Profile", "local SEO tips for salons", "beauty parlour digital marketing"],
+  tags: ["Beauty Parlour", "Google Maps", "Local SEO", "Google Business Profile", "Salon Marketing"],
+  readingTime: "9 min read",
+  featured: false,
+  relatedPosts: [NEXT_NUMERIC_ID, NEXT_NUMERIC_ID, NEXT_NUMERIC_ID],
+  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=beauty-parlour-google-maps-ranking"
+  }
 ]
