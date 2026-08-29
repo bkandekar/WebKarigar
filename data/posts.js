@@ -2136,7 +2136,7 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   category: "local-business-websites",
   subcategory: "beauty-parlour-websites",
   date: "2026-08-29T09:00:00+05:30",
-  modifiedDate: "2026-08-29T09:00:00+05:30",
+  modifiedDate: "2026-08-27T09:00:00+05:30",
   author: "Balu Kandekar",
   featuredImage: "images/blog/beauty-parlour-google-maps-ranking-guide.webp",
   excerpt: "Beauty parlour not showing up on Google Maps? Here's what actually affects your ranking — and where a proper website fits in. Practical, no fluff.",
@@ -2145,7 +2145,7 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   tags: ["Beauty Parlour", "Google Maps", "Local SEO", "Google Business Profile", "Salon Marketing"],
   readingTime: "9 min read",
   featured: false,
-  relatedPosts: [NEXT_NUMERIC_ID, NEXT_NUMERIC_ID, NEXT_NUMERIC_ID],
+  relatedPosts: [7, 12, 8],
   canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=beauty-parlour-google-maps-ranking"
   }
 ]
