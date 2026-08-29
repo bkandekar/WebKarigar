@@ -2147,5 +2147,25 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   featured: false,
   relatedPosts: [7, 12, 8],
   canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=beauty-parlour-google-maps-ranking"
-  }
+  },
+  {
+  id: 22,
+  title: "Best Features Every Beauty Parlour Website Must Have",
+  slug: "best-features-every-beauty-parlour-website-must-have",
+  category: "local-business-websites",
+  subcategory: "beauty-parlour-websites",
+   "status": "scheduled",
+  "publishDate": "2026-08-30T05:00:00+05:30",
+  "modifiedDate": "2026-08-18T29:00:00+05:30"
+  author: "Balu Kandekar",
+  featuredImage: "images/best-features-beauty-parlour-website.webp",
+  excerpt: "The practical features every beauty parlour website needs — clear services, photo gallery, WhatsApp booking, Google Maps and more — so local clients in Maharashtra find you and book easily.",
+  primaryKeyword: "beauty parlour website features",
+  secondaryKeywords: ["beauty parlour website", "salon website features", "beauty parlour website design", "features of beauty parlour website", "mobile friendly beauty parlour website"],
+  tags: ["Beauty Parlour", "Salon Website", "Website Features", "Local Business Website", "Maharashtra"],
+  readingTime: "9 min read",
+  featured: false,
+  relatedPosts: [21, 1, 5],
+  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=best-features-every-beauty-parlour-website-must-have"
+}
 ]
