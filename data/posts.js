@@ -940,7 +940,7 @@ We build clean, mobile-friendly websites for local businesses such as beauty par
   date: "2026-08-08",
   modifiedDate: "2026-08-08",
   author: "Balu Kandekar",
-  featuredImage: "images/Why Your Ganpati Mandap Decoration.webp",
+  featuredImage: "images/why-your-ganpati-mandap-decoration.webp",
   excerpt: "Learn why a professional website can help Ganpati Mandap Decoration businesses showcase their work, improve online visibility and generate WhatsApp enquiries.",
   content: `<h1>Why Your Ganpati Mandap Decoration Business Needs a Website: Get More Customers and WhatsApp Leads from Google</h1>
 
