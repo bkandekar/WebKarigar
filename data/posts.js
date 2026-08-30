@@ -2154,7 +2154,7 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   slug: "best-features-every-beauty-parlour-website-must-have",
   category: "local-business-websites",
   subcategory: "beauty-parlour-websites",
-   "status": "scheduled",
+   "status": "published",
   "publishDate": "2026-08-30T05:00:00+05:30",
   "modifiedDate": "2026-08-18T29:00:00+05:30"
   author: "Balu Kandekar",
