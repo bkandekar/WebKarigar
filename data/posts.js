@@ -88,7 +88,7 @@ window.BLOG_POSTS = [
   subcategory: "pest-control-websites",
   date: "2026-08-20",
   modifiedDate: "2026-08-20",
-  author: "Webkar Studio Editorial Team",
+  author: "WebKarigar Editorial Team",
   featuredImage: "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1200&q=80",
   excerpt: "Learn how a focused single-page website can help pest control businesses in Maharashtra build trust, showcase services, generate local enquiries, and make it easier for customers to contact them.",
   content: `
