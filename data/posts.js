@@ -1,5 +1,5 @@
 /**
- * Webkar Studio - Blog Posts Database
+ * WebKarigar - Blog Posts Database
  * Pure JavaScript Data Store (Compatible with Zero-Build Static Hosting / GitHub Pages)
  * 
  * To add a new post:
