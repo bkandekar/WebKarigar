@@ -2166,5 +2166,24 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   featured: false,
   relatedPosts: [21, 1, 5],
   canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=best-features-every-beauty-parlour-website-must-have"
+},
+  {
+  id: 23,
+  title: "Gym Website Cost in India – Realistic Prices for Small Gyms",
+  slug: "gym-website-cost-in-india-realistic-prices-for-small-gyms",
+  category: "website-cost-and-buying-guides",
+  subcategory: "website-cost-in-india",
+  date: "2026-08-31T05:00:00+05:30",
+  modifiedDate: "2026-08-31T09:00:00+05:30",
+  author: "Balu Kandekar",
+  featuredImage: "images/gym-website-cost-india-small-gyms.webp",
+  excerpt: "A practical look at what affects gym website cost in India for small local gyms. Learn the factors, features that matter, common mistakes, and how to decide without overspending.",
+  primaryKeyword: "gym website cost in India",
+  secondaryKeywords: ["small gym website price India", "fitness centre website cost", "gym website package India", "website for local gym"],
+  tags: ["gym website", "website cost India", "small business website", "local gym", "fitness website", "Maharashtra gyms"],
+  readingTime: "10 min read",
+  featured: false,
+  relatedPosts: [6, 12, 14],
+  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=gym-website-cost-in-india-realistic-prices-for-small-gyms"
 }
 ]
