@@ -374,7 +374,7 @@ window.BLOG_POSTS = [
   readingTime: "8 min read",
   featured: true,
   relatedPosts: [2, 8, 9],
-  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=how-pest-control-businesses-in-maharashtra-get-leads-with-a-website"
+  canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=how-pest-control-businesses-in-maharashtra-get-leads-with-a-website"
 },
   {
     
@@ -394,7 +394,7 @@ modifiedDate: "2026-08-28T09:00:00+05:30",
   readingTime: "8 min read",
   featured: false,
   relatedPosts: [],
-  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=why-beauty-parlours-salons-need-dedicated-website"
+  canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=why-beauty-parlours-salons-need-dedicated-website"
 },
   {
     id: 3,
@@ -432,7 +432,7 @@ modifiedDate: "2026-08-28T09:00:00+05:30",
     readingTime: "4 min read",
     featured: false,
     relatedPosts: [4, 6, 9],
-    canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=how-coaching-classes-and-tutors-attract-more-students-online"
+    canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=how-coaching-classes-and-tutors-attract-more-students-online"
   },
   {
     id: 4,
@@ -491,7 +491,7 @@ modifiedDate: "2026-08-28T09:00:00+05:30",
     readingTime: "5 min read",
     featured: false,
     relatedPosts: [2, 5, 6],
-    canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=website-vs-facebook-page-why-local-businesses-need-their-own-site"
+    canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=website-vs-facebook-page-why-local-businesses-need-their-own-site"
   },
   {
     id: 5,
@@ -526,7 +526,7 @@ modifiedDate: "2026-08-28T09:00:00+05:30",
     readingTime: "4 min read",
     featured: false,
     relatedPosts: [1, 4, 8],
-    canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=why-whatsapp-alone-is-not-enough-for-your-business-growth"
+    canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=why-whatsapp-alone-is-not-enough-for-your-business-growth"
   },
   {
     id: 6,
