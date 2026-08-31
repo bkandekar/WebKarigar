@@ -2184,6 +2184,6 @@ modifiedDate: "2026-08-27T09:00:00+05:30",
   readingTime: "10 min read",
   featured: false,
   relatedPosts: [6, 12, 14],
-  canonicalUrl: "https://webkarstudio.in/blog/post.html?slug=gym-website-cost-in-india-realistic-prices-for-small-gyms"
+  canonicalUrl: "https://bkandekar.github.io/WebKarigar/blog/post.html?slug=gym-website-cost-in-india-realistic-prices-for-small-gyms"
 }
 ]
